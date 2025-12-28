@@ -1,0 +1,33 @@
+{
+    "description": "Reach",
+    "supported_items": "#minecraft:swords",
+    "primary_items": "#minecraft:swords",
+    "weight": 5,
+    "max_level": 3,
+    "min_cost": {
+      "base": 5,
+      "per_level_above_first": 9
+    },
+    "max_cost": {
+      "base": 20,
+      "per_level_above_first": 9
+    },
+    "anvil_cost": 2,
+    "slots": [
+      "mainhand"
+    ],
+    "effects": {
+      "minecraft:attributes": [
+        {
+          "attribute": "minecraft:entity_interaction_range",
+          "id": "evola_dp:reach_enchant",
+          "amount": {
+            "type": "minecraft:linear",
+            "base": 0.25,
+            "per_level_above_first": 0.25
+          },
+          "operation": "add_value"
+        }
+      ]
+    }
+  }

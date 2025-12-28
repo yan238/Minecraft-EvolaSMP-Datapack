@@ -1,0 +1,38 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "   ",
+      "lsl",
+      "f f"
+    ],
+    "key": {
+      "s": "minecraft:stick",
+      "l": "minecraft:leather",
+      "f": "minecraft:feather"
+    },
+    "result": {
+      "id": "minecraft:elytra",
+      "components": {
+        "minecraft:max_damage": 11,
+        "minecraft:repair_cost": 40,
+        "minecraft:equippable": {
+          "slot": "chest",
+          "asset_id": "minecraft:elytra",
+          "swappable": false
+        },
+        "minecraft:custom_data": "{lb_glider:true}",
+        "minecraft:item_name": "Glider",
+        "minecraft:rarity": "common",
+        "minecraft:lore": [
+          {
+            "text": "Equip to glide for at most 10 seconds",
+            "color": "white"
+          },
+          {
+            "text": "Not suitable to be used with firework rockets",
+            "color": "white"
+          }
+        ]
+      }
+    }
+  }
