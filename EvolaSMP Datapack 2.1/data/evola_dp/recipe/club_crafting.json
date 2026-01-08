@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " l ",
+    " s ",
+    " s "
+  ],
+  "key": {
+    "s": "minecraft:stick",
+    "l": "#minecraft:logs"
+  },
+  "result": {
+    "id": "minecraft:debug_stick",
+    "components": {
+      "minecraft:item_name": "Club",
+      "minecraft:rarity": "common",
+      "minecraft:lore": [
+        {
+          "text": "Usatoyeetable",
+          "color": "white"
+        }
+      ]
+    }
+  }
+}

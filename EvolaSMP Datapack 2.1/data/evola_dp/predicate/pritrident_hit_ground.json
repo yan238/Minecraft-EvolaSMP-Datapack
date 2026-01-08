@@ -1,0 +1,10 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "nbt": "{inGround:true}",
+      "predicates": {
+        "minecraft:custom_data": "{pritrident:true}"
+      }
+    }
+  }

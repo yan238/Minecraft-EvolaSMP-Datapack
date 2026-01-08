@@ -1,0 +1,38 @@
+{
+  "criteria": {
+    "kill_soul_mob": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "player": {
+          "slots": {
+            "weapon.offhand": {
+              "items": "minecraft:repeating_command_block"
+            }
+          }
+        },
+        "entity": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": [
+                  "minecraft:snow_golem",
+                  "minecraft:copper_golem",
+                  "minecraft:iron_golem"
+                ]
+              }
+            }
+          }
+        ],
+        "killing_blow": {
+          "is_direct": true
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "evola_dp:gain_soul"
+  }
+}

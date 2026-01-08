@@ -1,0 +1,101 @@
+{
+    "description": "PriTrident Thrown",
+    "supported_items": "minecraft:trident",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+      "base": 0,
+      "per_level_above_first": 0
+    },
+    "max_cost": {
+      "base": 0,
+      "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+      "mainhand"
+    ],
+    "effects": {
+      "minecraft:trident_return_acceleration": [
+        {
+          "effect": {
+            "type": "minecraft:set",
+            "value": 5
+          }
+        }
+      ],
+      "minecraft:post_attack": [
+        {
+          "requirements": {
+            "condition": "minecraft:entity_properties",
+            "entity": "direct_attacker",
+            "predicate": {
+              "type": "minecraft:trident"
+            }
+          },
+          "effect": {
+            "type": "minecraft:all_of",
+            "effects": [
+              {
+                "type": "minecraft:summon_entity",
+                "entity": "minecraft:lightning_bolt"
+              },
+              {
+                "type": "minecraft:play_sound",
+                "sound": "minecraft:item.trident.thunder",
+                "volume": 7,
+                "pitch": 1
+              }
+            ]
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        },
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "minecraft:trident"
+                }
+              },
+              {
+                "condition": "minecraft:weather_check",
+                "raining": true
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:apply_mob_effect",
+            "to_apply": "minecraft:poison",
+            "min_duration": 5,
+            "max_duration": 5,
+            "min_amplifier": 0,
+            "max_amplifier": 0
+          },
+          "enchanted": "attacker",
+          "affected": "victim"
+        }
+      ],
+      "minecraft:hit_block": [
+        {
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:weather_check",
+                "thundering": true
+              }
+            ]
+          },
+          "effect": {
+            "type": "minecraft:run_function",
+            "function": "evola_dp:pritrident_thrown_thunder"
+          }
+        }
+      ]
+    }
+  }

@@ -1,0 +1,18 @@
+{
+    "criteria": {
+      "using_focus": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": "minecraft:chain_command_block",
+            "components": {
+              "minecraft:custom_data": "{focus:true}"
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "evola_dp:using_focus"
+    }
+  }

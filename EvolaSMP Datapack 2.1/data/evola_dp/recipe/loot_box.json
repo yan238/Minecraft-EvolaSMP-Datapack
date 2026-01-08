@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      " i ",
+      "gce",
+      " d "
+    ],
+    "key": {
+      "c": "minecraft:chest",
+      "i": "minecraft:iron_block",
+      "g": "minecraft:gold_block",
+      "e": "minecraft:emerald_block",
+      "d": "minecraft:diamond_block"
+    },
+    "result": {
+      "id": "minecraft:chest",
+      "components": {
+        "minecraft:item_name": "Loot Box",
+        "minecraft:rarity": "uncommon",
+        "minecraft:container_loot": {
+          "loot_table": "evola_dp:loot_box"
+        },
+        "minecraft:lore": [
+          "Contains cool loot"
+        ],
+        "minecraft:custom_data": "{loot_box:true}",
+        "minecraft:custom_name": {
+          "text": "Loot Box",
+          "italic": false
+        }
+      }
+    }
+  }

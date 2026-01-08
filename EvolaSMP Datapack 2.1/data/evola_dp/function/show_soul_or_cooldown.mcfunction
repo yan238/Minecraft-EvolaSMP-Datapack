@@ -1,0 +1,3 @@
+execute if score @s soul_meter matches ..32 run return run title @s actionbar [{text:"Soul Meter: ",bold:true,color:"gray"},{score:{objective:soul_meter,name:"@s"},bold:true,color:"white"},{text:"/99",bold:true,color:"gray"}]
+execute if score @s soul_spell_cooldown matches 0 run return run title @s actionbar [{text:"Soul Meter: ",bold:true,color:"gray"},{score:{objective:soul_meter,name:"@s"},bold:true,color:"dark_aqua"},{text:"/99",bold:true,color:"gray"}]
+title @s actionbar [{text:"Spell Cooldown: ",bold:true,color:"gray"},{score:{objective:soul_spell_cooldown,name:"@s"},bold:true,color:"dark_aqua"}]

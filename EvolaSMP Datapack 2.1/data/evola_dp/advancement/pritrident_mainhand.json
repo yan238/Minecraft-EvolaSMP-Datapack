@@ -1,0 +1,21 @@
+{
+    "criteria": {
+      "pritrident_mainhand": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": {
+            "slots": {
+              "weapon.mainhand": {
+                "predicates": {
+                  "minecraft:custom_data": "{pritrident:true}"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "evola_dp:pritrident_mainhand"
+    }
+  }

@@ -1,0 +1,15 @@
+{
+    "criteria": {
+      "eat_soul_vessel": {
+        "trigger": "minecraft:consume_item",
+        "conditions": {
+          "item": {
+            "items": "minecraft:repeating_command_block"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "evola_dp:gain_soul_meter"
+    }
+  }
