@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "  s",
+      " s ",
+      "s  "
+    ],
+    "key": {
+      "s": "minecraft:wooden_spear"
+    },
+    "result": {
+      "id": "minecraft:wooden_spear",
+      "components": {
+        "!minecraft:kinetic_weapon": {},
+        "minecraft:attack_range": {
+          "min_reach": 10,
+          "max_reach": 20,
+          "min_creative_reach": 10,
+          "max_creative_reach": 20,
+          "hitbox_margin": 1
+        },
+        "minecraft:custom_data": "{lps:true}",
+        "minecraft:item_name": "Long Pointy Stick",
+        "!minecraft:enchantments": {},
+        "minecraft:lore": [
+          {
+            "text": "Has a minimum range of 10 blocks and a maximum range of 20 blocks",
+            "color": "white"
+          }
+        ]
+      }
+    }
+  }

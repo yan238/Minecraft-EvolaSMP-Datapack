@@ -1,0 +1,1 @@
+attribute @s minecraft:entity_interaction_range modifier remove evola_dp:wemmbu_reach_enchant

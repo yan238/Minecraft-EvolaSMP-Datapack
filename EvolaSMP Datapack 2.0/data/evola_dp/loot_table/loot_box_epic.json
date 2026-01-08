@@ -1,0 +1,185 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:shield",
+            "weight": 10,
+            "functions": [
+              {
+                "function": "minecraft:set_banner_pattern",
+                "patterns": [
+                  {
+                    "pattern": "minecraft:base",
+                    "color": "black"
+                  },
+                  {
+                    "pattern": "minecraft:mojang",
+                    "color": "white"
+                  }
+                ],
+                "append": false
+              },
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:mending": 1,
+                  "minecraft:unbreaking": 3
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:chest",
+            "weight": 3,
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:item_name": "Loot Box",
+                  "minecraft:rarity": "uncommon",
+                  "minecraft:container_loot": {
+                    "loot_table": "evola_dp:loot_box"
+                  },
+                  "minecraft:lore": [
+                    "Contains cool loot"
+                  ],
+                  "minecraft:custom_data": "{loot_box:true}",
+                  "minecraft:custom_name": {
+                    "text": "Loot Box",
+                    "italic": false
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:fishing_rod",
+            "weight": 17,
+            "functions": [
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": {
+                  "type": "minecraft:constant",
+                  "value": 70
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:enchanted_golden_apple",
+            "weight": 5
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:trident",
+            "weight": 10,
+            "functions": [
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": {
+                  "type": "minecraft:uniform",
+                  "min": 40,
+                  "max": 50
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:crossbow",
+            "weight": 15,
+            "functions": [
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": {
+                  "type": "minecraft:uniform",
+                  "min": 40,
+                  "max": 50
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:bow",
+            "weight": 13,
+            "functions": [
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": {
+                  "type": "minecraft:uniform",
+                  "min": 40,
+                  "max": 50
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:netherite_scrap",
+            "weight": 7,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 1,
+                  "max": 2
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "evola_dp:diamond_gear",
+            "weight": 11,
+            "functions": [
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": {
+                  "type": "minecraft:uniform",
+                  "min": 40,
+                  "max": 50
+                },
+                "options": "#minecraft:tradeable"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:splash_potion",
+            "weight": 9,
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:potion_contents": {
+                    "custom_effects": [
+                      {
+                        "id": "minecraft:levitation",
+                        "duration": 72000
+                      }
+                    ]
+                  },
+                  "minecraft:lore": [
+                    "Splash this on your friends to bring them to Cloud Nine!"
+                  ],
+                  "minecraft:custom_name": {
+                    "text": "Splash Potion of Cloud Nine",
+                    "italic": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

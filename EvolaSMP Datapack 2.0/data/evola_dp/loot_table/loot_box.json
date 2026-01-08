@@ -1,0 +1,29 @@
+{
+    "pools": [
+      {
+        "rolls": 4,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "value": "evola_dp:loot_box_common",
+            "weight": 50
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "evola_dp:loot_box_uncommon",
+            "weight": 25
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "evola_dp:loot_box_rare",
+            "weight": 17
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "evola_dp:loot_box_epic",
+            "weight": 8
+          }
+        ]
+      }
+    ]
+  }
