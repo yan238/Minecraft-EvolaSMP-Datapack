@@ -1,0 +1,14 @@
+{
+    "structures": [
+        {
+            "weight": 1,
+            "structure": "evola_dp:cobblestone_mound"
+        }
+    ],
+    "placement": {
+        "type": "minecraft:random_spread",
+        "separation": 10,
+        "spacing": 20,
+        "salt": 87183
+    }
+}

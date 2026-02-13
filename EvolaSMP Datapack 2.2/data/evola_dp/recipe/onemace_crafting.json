@@ -1,0 +1,40 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "ece",
+      "ece",
+      " r "
+    ],
+    "key": {
+      "c": "minecraft:heavy_core",
+      "r": "minecraft:breeze_rod",
+      "e": "minecraft:enchanting_table"
+    },
+    "result": {
+      "id": "minecraft:mace",
+      "components": {
+        "minecraft:custom_data": "{onemace:true}",
+        "minecraft:enchantments": {
+          "minecraft:breach": 4,
+          "minecraft:density": 5
+        },
+        "minecraft:attribute_modifiers": [
+          {
+            "type": "minecraft:jump_strength",
+            "id": "evola_dp:onemace_jump",
+            "amount": 0.5,
+            "operation": "add_multiplied_base",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:gravity",
+            "id": "evola_dp:onemace_gravity",
+            "amount": 1,
+            "operation": "add_multiplied_base",
+            "slot": "mainhand"
+          }
+        ],
+        "minecraft:item_name": "OneMace"
+      }
+    }
+  }
