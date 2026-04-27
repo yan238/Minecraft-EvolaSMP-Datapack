@@ -1,2 +1,0 @@
-item replace entity @s weapon.offhand with minecraft:air
-give @s chain_command_block[consumable={consume_seconds:10,animation:"none",sound:"block.conduit.activate",has_consume_particles:false,on_consume_effects:[{type:"minecraft:play_sound",sound:"block.conduit.deactivate"}]},custom_data={focus:true},use_effects={speed_multiplier:0},max_stack_size=2,item_name="Soul Focus"] 1
