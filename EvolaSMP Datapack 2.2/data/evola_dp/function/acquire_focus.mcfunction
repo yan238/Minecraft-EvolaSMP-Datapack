@@ -1,4 +1,0 @@
-advancement revoke @s only evola_dp:acquire_focus
-
-scoreboard players set @s soul_meter 0
-give @p chain_command_block[consumable={consume_seconds:10,animation:"none",sound:"block.conduit.activate",has_consume_particles:false,on_consume_effects:[{type:"minecraft:play_sound",sound:"block.conduit.deactivate"}]},custom_data={focus:true},use_effects={speed_multiplier:0},item_name={"color":"dark_aqua","text":"Soul Focus"},item_model="minecraft:soul_lantern",enchantment_glint_override=true,lore=[{"color":"aqua","text":"Hold right click to Focus and gain Absorption V for 30 mins"},{"color":"aqua","text":"Requires 33 soul to perform"}]] 1

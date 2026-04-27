@@ -1,1 +1,0 @@
-attribute @s minecraft:entity_interaction_range modifier add evola_dp:wemmbu_reach_enchant 0.2 add_value
