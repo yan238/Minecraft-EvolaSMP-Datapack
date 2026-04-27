@@ -1,1 +1,0 @@
-tellraw @a [{text:"<"},{selector:"@s"},{text:"> I am a Wemmbu fanatic!"}]

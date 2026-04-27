@@ -1,1 +1,0 @@
-particle minecraft:heart
